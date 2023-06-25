@@ -3,7 +3,6 @@ import GoogleProvider from "next-auth/providers/google";
 import { PrismaAdapter } from "@next-auth/prisma-adapter"
 import prisma from '../../../libs/prismadb'
 
-export const dynamic = 'force-dynamic'
 
 export const authOptions = {
     adapter: PrismaAdapter(prisma),
