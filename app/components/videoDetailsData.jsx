@@ -66,6 +66,8 @@ const VideoDetailsData = ({ videoId }) => {
     }
     useEffect(() => {
         fetchDataFromApi();
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return (
         <div className="flex lg:flex-row flex-col justify-around md:px-[14px] px-[7px] overflow-x-hidden">

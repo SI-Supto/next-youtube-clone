@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import logoSvg from '../../assets/loading.svg';
 const Loading = () => {
     const [isLoading, setIsLoading] = useState(true)

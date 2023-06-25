@@ -9,5 +9,3 @@ export const FetchFromAlternativeApi = async (param) => {
     let { data } = await axios.get(`https://youtube-v3-alternative.p.rapidapi.com/${param}`, options)
     return data
 }
-
-// 'f2eed51885mshe34b56bf7390eb3p19f831jsnd4fc60d668cb'

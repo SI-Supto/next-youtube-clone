@@ -22,9 +22,10 @@ const ChannelDetailsData = ({ id }) => {
     }
     useEffect(() => {
         fetchChannelData(id)
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-    // const banneringData = channelData[0] || {}
     const { title, image, thumbnail, subscriberCount } = channelData;
 
     return (

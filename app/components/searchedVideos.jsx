@@ -10,6 +10,8 @@ const SearchedVideos = ({ searchTerm }) => {
     }
     useEffect(() => {
         fetchData(searchTerm)
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return (
         <Videos data={data} />
