@@ -2,26 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    @apply bg-black text-white overflow-x-hidden
+}
+
+.react-player {
+    height: 75vh !important;
+    width: 100% !important;
+}
+
+@media screen and (max-width: 700px) {
+    .react-player {
+        height: 60vh !important;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .react-player {
+        height: 50vh !important;
+    }
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+    behavior: smooth;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #989898;
+    border-radius: 10px;
 }
