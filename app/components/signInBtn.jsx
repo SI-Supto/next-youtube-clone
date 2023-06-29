@@ -49,7 +49,7 @@ const SignInBtn = () => {
     return (
         <>
             <button
-                onClick={() => { signIn() }}
+                onClick={() => { signIn("google") }}
                 className='
                 ring-1
                 ring-blue-600

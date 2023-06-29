@@ -15,7 +15,7 @@ const Home = () => {
         fetchData(topic)
     }, [topic])
     return (
-        <div className="mt-2 flex flex-col px-[14px]">
+        <div className="mt-2 flex flex-col px-[7px] md:px-[14px]">
             <Category />
             <div>
                 <Videos data={data} />

@@ -69,7 +69,7 @@ const Navbar = () => {
 
             <div className={`flex items-center gap-4 md:gap-0 ${statement ? 'hidden' : 'block'}`}>
                 <div
-                    className={`md:hidden cursor-pointer`}
+                    className={`md:hidden cursor-pointer mr-2`}
                     onClick={() => { setStatement(!statement) }}
                 >
                     <FiSearch color='white' size={18} />

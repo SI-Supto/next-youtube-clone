@@ -8,7 +8,7 @@ const Videos = ({ data }) => {
     if (data.length == 0) return <Loading />
 
     return (
-        <div className="flex gap-3 flex-wrap justify-center mt-7">
+        <div className="flex gap-1 md:gap-3 flex-wrap justify-center mt-7">
             {data.map((e, idx) => (
                 <>
                     {e.id.channelId && <ChannelCard data={e} key={idx} />}
