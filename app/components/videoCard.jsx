@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const VideoCard = ({ data }) => {
     return (
-        <div className='lg:w-[394px] w-[310px] md:w-[350px] min-h-[320px] rounded-t-2xl'>
+        <div className='lg:w-[394px] w-[320px] md:w-[350px] min-h-[320px] rounded-t-2xl'>
             <Link href={`/videoDetails/${data?.id?.videoId}`}>
                 <div className='relative w-full h-[180px] object-contain  rounded-t-lg'>
                     <Image src={data?.snippet?.thumbnails?.high?.url}

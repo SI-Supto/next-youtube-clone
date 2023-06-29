@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 const ChannelCard = ({ data: { id: { channelId }, snippet } }) => {
     return (
-        <div className='w-[394px] sm:w-[300px] md:w-[350px] min-h-[320px] rounded-t-2xl'>
+        <div className='lg:w-[394px] w-[320px] md:w-[350px] min-h-[320px] rounded-t-2xl'>
             <Link href={`/channelDetails/${channelId}`}>
                 <div className='relative w-full image-center flex justify-center'>
                     <div className='relative w-[180px] h-[180px] object-contain  rounded-t-lg'>
