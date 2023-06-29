@@ -7,7 +7,7 @@ const Loading = () => {
     const [isLoading, setIsLoading] = useState(true)
     setTimeout(() => {
         setIsLoading(false)
-    }, 4000);
+    }, 8000);
     return (
         <div className="w-auto h-[450px] flex justify-center items-center">
             {isLoading ? (<Image src={logoSvg} width={50} height={50} alt="loading.." />)
